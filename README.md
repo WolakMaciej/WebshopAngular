@@ -1,5 +1,6 @@
 # webshop
 
+![image](https://user-images.githubusercontent.com/74461485/123557658-684ce900-d792-11eb-80a1-10c0720e19e9.png)
 
 ## Table of contents
 * [General info](#general-info)
