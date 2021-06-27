@@ -41,6 +41,6 @@ login: User
 password: user1234
 
 ## Heroku
-https://webshopwolakm.herokuapp.com/products
+https://webshopangular2.herokuapp.com (status 404)
 
 
