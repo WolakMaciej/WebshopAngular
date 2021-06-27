@@ -1,0 +1,23 @@
+<div class="card mb-4 shadow-sm">
+
+  <img class="bd-placeholder-img card-img-top" width="100%" [src]="product.imageUrl" alt="image">
+
+  <div class="card-body">
+
+    <div class="card-title"><strong>Name: {{product.name}}</strong></div>
+    <div class="card-title"><strong>Id: {{product.id}}</strong></div>
+    <p class="card-text">{{product.description | slice: 0:100}}</p>
+    <p class="card-text">
+      <strong>{{ product.price | currency:"PLN "}}</strong>
+    </p>
+    <p>dostępne {{ product.currentTotalUnitsInStock }} sztuk</p>
+
+
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <button [disabled]="product.currentTotalUnitsInStock<=0" type="button" class="btn btn-sm btn-primary product-btn" (click)="addProductToCart()">Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
