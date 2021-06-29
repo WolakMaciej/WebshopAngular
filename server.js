@@ -14,6 +14,10 @@ app.use(express.static(distDir));
 app.get('/*', function(req,res) {
   res.sendFile(path.join(distDir +"index.html"));
 });
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
 
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
