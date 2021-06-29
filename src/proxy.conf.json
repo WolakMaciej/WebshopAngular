@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target:
+    "target":
     "https://shop3heroku.herokuapp.com",
     "secure": false,
     "pathRewrite": {
