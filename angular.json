@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Store": {
+    "webshopwolak": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Store:build"
+            "browserTarget": "webshopwolak:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Store:build:production"
+              "browserTarget": "webshopwolak:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Store:build"
+            "browserTarget": "webshopwolak:build"
           }
         },
         "test": {
@@ -113,16 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Store:serve"
+            "devServerTarget": "webshopwolak:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Store:serve:production"
+              "devServerTarget": "webshopwolak:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Store"
+  "defaultProject": "webshopwolak"
 }
