@@ -8,7 +8,7 @@ const app = express();
 
 
 // Serve only the static files form the dist directory
-var distDir = __dirname + "/dist/";
+var distDir = __dirname + "/dist/webshopwolak/";
 app.use(express.static(distDir));
 
 app.get('/*', function(req,res) {
