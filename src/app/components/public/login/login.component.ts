@@ -11,6 +11,7 @@ export class LoginComponent implements OnInit {
 
 
   model: any = {};
+  messageError: string;
 
   constructor(private loginService: LoginService,
               private router: Router) {
@@ -20,8 +21,12 @@ export class LoginComponent implements OnInit {
   }
 
 
-  login(): void {
-    this.loginService.login(this.model.username, this.model.password).subscribe(() => this.reload());
+    login(): void {
+    this.loginService.login(this.model.username, this.model.password).subscribe(() => {this.reload()},
+    error => {
+      this.messageError = "Incorrect password or username";
+
+    });
   }
 
   reload(): void{
