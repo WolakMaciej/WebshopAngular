@@ -19,6 +19,7 @@
 
 
           <button class="btn btn-primary btn-block" [disabled]="loginForm.invalid">Login</button>
+          <span class="card-text text-danger" *ngIf="messageError">Incorrect password or username</span>
 
 
         </form>
